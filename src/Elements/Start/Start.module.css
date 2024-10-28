@@ -1,0 +1,6 @@
+.hero{
+    width: 100vw;
+    height: 90vh;
+    background: url('../../../Images/Hero.png') center;
+    background-size: cover;
+}
