@@ -9,7 +9,7 @@ const Start = () => {
   // gsap.registerPlugin(ScrollTrigger)
 
   setTimeout(()=>{
-
+    alert('Olá, esse site ainda esta em desenvolvimento, esse é um grande projeto o qual criei meu proprio server Node.js usando a VPS da CONTABO, e utilizo a API da nuvemshop para produtos e finalização de compra, utilizo GSAP e LENIS para animação e scroll suave, espero que goste :)')
     gsap.to("#Carrossel", {
       scrollTrigger: {
         trigger: "#Comeca",   
