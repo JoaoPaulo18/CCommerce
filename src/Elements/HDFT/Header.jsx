@@ -31,7 +31,7 @@ const useLenis = (time) =>{
 }
 
 useEffect(()=>{
-  alert('Olá, esse site ainda esta em desenvolvimento, esse é um grande projeto o qual criei meu proprio server Node.js usando a VPS da CONTABO, e utilizo a API da nuvemshop para produtos e finalização de compra, utilizo GSAP e LENIS para animação e scroll suave, espero que goste :)')
+  
   if(menu){
     setWin(refe.current)
 
@@ -63,7 +63,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 // Selecionando o elemento que queremos animar
 setTimeout(()=>{
-
+  alert('Olá, esse site ainda esta em desenvolvimento, esse é um grande projeto o qual criei meu proprio server Node.js usando a VPS da CONTABO, e utilizo a API da nuvemshop para produtos e finalização de compra, utilizo GSAP e LENIS para animação e scroll suave, espero que goste :)')
   gsap.to("#header", {
     scrollTrigger: {
       trigger: "#BODY",   // O elemento que irá disparar o efeito
