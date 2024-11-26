@@ -1,0 +1,13 @@
+.title{
+    font-size: 3rem;
+    color: var(--Reverse);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width:380px) {
+    .title{
+        font-size: 2rem;
+    }
+    
+}

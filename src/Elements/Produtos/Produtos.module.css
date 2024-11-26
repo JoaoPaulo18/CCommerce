@@ -1,0 +1,108 @@
+.wrapper{
+    position: relative;
+    max-width: 1430px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.ProdutosContainer{
+    display: flex;
+    padding: 1rem 5%;
+    overflow: hidden;
+    gap: 1.3rem;
+    transition: transform .3s;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.ProdutoSingle{
+    width: 250px;
+
+}
+
+.imageContainer{
+    height: 400px;
+    width: 250px;
+    min-width: 250px;
+    position: relative;
+}
+.imageContainer h3{
+    color: var(--Subtitle);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: .85rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: var(--Promotion);
+}
+.imageContainer img{
+    height: 100%;
+    object-fit: cover;
+}
+.infosContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.infosContainer h2{
+    color: var(--Reverse);
+    margin-top: 1rem;
+    display:grid;
+    grid-template-columns: 1fr max-content;
+    font-size: 1.25rem;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.infosContainer h2 span{
+    font-size: .85rem;
+    background: var(--Promotion);
+    padding: 3px 6px;
+    font-weight: 300;
+}
+
+.infosContainer>h3{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Reverse);
+}
+
+.infosContainer > h3 span{
+    font-weight: 200;
+    color:#555555;
+    text-decoration: line-through;
+}
+
+.Plus,.Less{
+    content: '>';
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: #333333;
+    align-content: center;
+    opacity: .5;
+    text-align: center;
+    font-size:2rem;
+    cursor: pointer;
+    z-index: 3;
+}
+.Plus:hover,.Less:hover{
+    opacity: 1;
+}
+
+.Plus{
+    right:5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Less{
+    left: 6%; 
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+}

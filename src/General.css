@@ -2,7 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    z-index: 1;
 }
+
+html.lenis, html.lenis body {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: clip;
+  }
+  
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+
+    html{
+    --Background: rgb(250, 250, 250);
+    --Reverse: #333333;
+    --Subtitle:#0D0D0D;
+    --Border: 2px solid rgba(0, 0, 0,0.05);
+    --Game: linear-gradient(41deg,rgb(234,234,234),rgba(170,170,170,.3));
+      --Promotion:#EAEAEA;
+}
+
+html.Dark{
+    --Background: #0D0D0D;
+    --Reverse:rgb(250, 250, 250);
+    --Subtitle:#ccc;
+    --Game: linear-gradient(41deg,rgb(28,28,28),rgba(19,19,20,.3));
+    --Border:   2px solid rgba(255, 255, 255,0.05);
+    --Promotion:#1c1c1c;
+
+}
+
 
 img{
     max-width: 100%;
@@ -16,7 +57,10 @@ a,ul,li{
 
 html,body{
     overflow-x: hidden;
+
 }
 body{
-    min-height: 100vh;
+    min-height: 100svh;
+    background: var(--Background);
+    font-family: "Sora", sans-serif;
 }

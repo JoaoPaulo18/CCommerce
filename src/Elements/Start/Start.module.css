@@ -1,6 +1,231 @@
-.hero{
-    width: 100vw;
-    height: 90vh;
-    background: url('../../../Images/Hero.png') center;
-    background-size: cover;
+.Others{
+    background: var(--Background);
+    padding-bottom: 2rem;
+    overflow: hidden;
 }
+.Video video{
+    width: 100vw;
+    object-fit: cover;
+    height: 100svh;
+    box-shadow: none;
+    position: fixed;
+    z-index: 0;
+}
+.Video{
+    margin-bottom: -1rem;
+    width: 100vw;
+    height: 110svh;
+    position: relative;
+    z-index: -1;
+}
+:global(.Dark) .Video::after {
+content: '';
+display: block;
+width: 100%;
+height: 100%;
+background: linear-gradient( transparent,#0D0D0D 92%);
+position: absolute;
+top: 0;
+}
+
+
+.title{
+    padding: 2.9rem 0;
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.carrosselContainer{
+    display: flex;
+    gap: 1.5rem;
+    overflow-x:visible;
+    position: relative;
+    transform: translate(-80px);
+}
+
+.carrosselContainer img{
+    max-width: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.Up{
+    position: relative;
+    transform: scale(.6);
+}
+
+.gameContainer{
+    display: flex;
+    position: relative;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0 1rem;
+    height: 55vw;
+    max-height: 744px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+.gameContainer div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.gameContainer > li{
+    justify-content: center;
+    height: 100% !important;
+    min-width: 35%;
+}
+.gameContainer li{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background: var(--Game);
+    border-radius: 4px;
+    border: var(--Border);
+    overflow: hidden;
+    cursor: pointer;
+    height: 35%;
+    padding-top: 2rem;
+}
+
+.gameContainer :global(.two-row){
+    height: 65%;
+}
+
+.gameContainer img{
+    filter: drop-shadow(-5px 4px 5px #000000ba);
+    position: relative;
+    display: block;
+    max-width: 100% ;
+
+}
+
+
+.gameContainer h2{
+    color: var(--Reverse);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.gameContainer p{
+    color: var(--Subtitle);
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 2rem ;
+    padding: 0 2rem;
+    line-height: 1.3rem;
+}
+
+
+.gameContainer .Jeans{
+    max-width: 85%;
+    bottom: -20%;
+    transform: rotate(-5deg);
+    position: absolute;
+}
+
+.gameContainer .TShirt{
+    bottom: 30%;
+}
+
+.gameContainer .Shirt{
+    max-width: 75%;
+}
+.gameContainer .Sneakers{
+    bottom: -5%;
+    left: 5%;
+}
+.gameContainer .Prom1{
+    max-width: 100%;
+    top: -25%;
+    position: absolute;
+}
+.gameContainer .Prom2{
+    max-width: 100%;
+    position: absolute;
+    bottom: -30%;
+}
+.styleGame{
+    margin-top: 2rem;
+}
+@media (max-width:1200px) {
+    .gameContainer h2{
+        font-size: 1.6rem;
+    }
+    .gameContainer p{
+        font-size: 10px;
+        margin-top: 1rem;
+        line-height: 1rem;
+    }
+    .gameContainer .Jeans{
+        bottom: -30%;
+    }
+}
+@media (max-width:800px) {
+    .gameContainer{
+       flex-direction: column;
+       align-items: center;
+        height: max-content;
+        max-height: max-content;
+    }
+    .gameContainer div{
+        align-items: center; 
+        gap: 1rem;
+    }
+    .gameContainer li{
+        order:  -1 !important;
+    }
+    .gameContainer > li{
+        order: 1;
+    }
+    .gameContainer li img{
+        max-width: 50% !important;
+        position: relative !important;
+    }
+    .gameContainer .Prom1{
+        transform: translateY(-20%);
+
+    }
+    .gameContainer .Prom2{
+        transform: translateY(20%);
+    }
+    .gameContainer .Sneakers{
+        transform: translateY(20%);
+        max-width: 70%;
+    }
+}   
+.Glow{
+    filter: blur(68px);
+    opacity: .4;
+    position:absolute ;
+    z-index: -1;
+    top: 10%;
+    left: 0;
+}
+.Glow2{
+    filter: blur(68px);
+    transform: rotateY(180deg);
+    opacity: .4;
+    position:absolute ;
+    z-index: -1;
+    top: 10%;
+    right: 0;
+}
+
+.Produtos{
+margin-top: 8rem;
+}
+.Produtos h2{
+    margin-bottom: 3rem;
+}
+
+/* 744px é a medida do do meio
+457px o Jeans
+263 px o Shirt
+CONFIGURAR CADA IMAGEM POR CONTA PRÓPRIA UMA VEZ QUE CADA UMA TEM UM ESTILO A SER SEGUIDO DIFERENTE
+*/

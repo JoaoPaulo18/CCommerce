@@ -1,0 +1,10 @@
+.subtitle{
+    text-transform: uppercase;
+    color: var(--Reverse);
+    font-size: .7rem;
+    text-align: center;
+    font-weight: 400;
+    max-width: 75ch;
+    color: var(--Subtitle);
+    padding: 0 1rem;
+}

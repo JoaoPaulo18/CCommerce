@@ -1,3 +1,5 @@
+const accessToken = "bca940cf9eab3eecf44cd7e015a6c3da1478533c"; // Coloque seu token de acesso aqui
+const storeId = "5390223"; // Coloque seu store ID aqui
 import express from "express";
 import cors from "cors";
 import fetch from "node-fetch";
@@ -7,13 +9,16 @@ app.use(cors()); // Habilitar CORS
 
 // Defina seu token de acesso e store ID diretamente no código
 const PORT = process.env.PORT || 3000;
-const accessToken = "bca940cf9eab3eecf44cd7e015a6c3da1478533c"; // Coloque seu token de acesso aqui
-const storeId = "5390223"; // Coloque seu store ID aqui
 
 app.get("/produtos", async (req, res) => {
   try {
+    const queryParams = req.query;
+    const queryString = new URLSearchParams(queryParams).toString();
+
     const response = await fetch(
-      `https://api.tiendanube.com/v1/${storeId}/products`,
+      `https://api.tiendanube.com/v1/${storeId}/products${
+        queryParams ? `?${queryString}` : ""
+      }`,
       {
         method: "GET",
         headers: {
@@ -23,6 +28,7 @@ app.get("/produtos", async (req, res) => {
         },
       }
     );
+
     if (!response.ok) {
       throw new Error(`Erro: ${response.statusText}`);
     }
