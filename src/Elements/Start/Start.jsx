@@ -84,7 +84,7 @@ const Start = () => {
         <li className='two-row'>
           <h2>Jeans</h2>
           <p>Style and comfort meet in our collection of jeans. Discover the latest trends and perfect cuts for an impeccable look.</p>
-          <img className={styles.Jeans} src={Sneakers} alt="" />
+          <img className={styles.Jeans} src={Jeans} alt="" />
         </li>
 
         <li>
