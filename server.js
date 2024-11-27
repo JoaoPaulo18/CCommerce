@@ -3,7 +3,8 @@ const storeId = "5390223"; // Coloque seu store ID aqui
 import express from "express";
 import cors from "cors";
 import fetch from "node-fetch";
-
+import https from "https";
+import fs from "fs";
 const app = express();
 app.use(cors()); // Habilitar CORS
 
@@ -79,6 +80,15 @@ app.get("/carrinho", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
+// const options = {
+//   key: fs.readFileSync("/etc/letsencrypt/live/seu-dominio.com/privkey.pem"),
+//   cert: fs.readFileSync("/etc/letsencrypt/live/seu-dominio.com/fullchain.pem"),
+// };
+
+const options = {
+  key: fs.readFileSync("./key.pem"),
+  cert: fs.readFileSync("./cert.pem"),
+};
+https.createServer(options, app).listen(PORT, () => {
+  console.log(`Servidor HTTPS rodando na porta ${PORT}`);
 });

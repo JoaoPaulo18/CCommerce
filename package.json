@@ -12,6 +12,7 @@
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
     "axios": "^1.7.7",
+    "certbot": "^5.0.3",
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "gsap": "^3.11.0",
