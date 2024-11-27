@@ -6,7 +6,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/src/ScrollTrigger';
 import Produtos from '../Produtos/Produtos';
 import Woman1 from '../../../Images/Mulher1.png'
-import Woman2 from '../../../Images/Mulher2.png'
+import Woman2 from '../../../Images/Mulher2.jpg'
 import Woman3 from '../../../Images/Mulher3.png'
 import Woman4 from '../../../Images/Mulher4.png'
 import Woman5 from '../../../Images/Mulher5.png'
