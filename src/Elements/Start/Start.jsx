@@ -5,7 +5,18 @@ import Subtitle from '../Helpers/Subtitle'
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/src/ScrollTrigger';
 import Produtos from '../Produtos/Produtos';
-import Woman from '../../../Images/Mulher1.png'
+import Woman1 from '../../../Images/Mulher1.png'
+import Woman2 from '../../../Images/Mulher2.png'
+import Woman3 from '../../../Images/Mulher3.png'
+import Woman4 from '../../../Images/Mulher4.png'
+import Woman5 from '../../../Images/Mulher5.png'
+import Woman6 from '../../../Images/Mulher6.png'
+import Jeans from '../../../Images/Jeans.png'
+import Shirt from '../../../Images/Shirt.png'
+import Promotion from '../../../Images/Promotion.png'
+import TShirt from '../../../Images/TShirt.png'
+import Sneakers from '../../../Images/Sneakers.png'
+
 const Start = () => {
   // gsap.registerPlugin(ScrollTrigger)
 
@@ -52,12 +63,12 @@ const Start = () => {
       <div id='Up' className={styles.Up}>
         <div id='Carrossel' className={styles.carrosselContainer}>
 
-          <img src={Woman} alt="" />
-          <img src="../../../Images/Mulher 2.jpg" alt="" />
-          <img src="../../../Images/Mulher 3.png" alt="" />
-          <img src="../../../Images/Mulher 4.png" alt="" />
-          <img src="../../../Images/Mulher 5.png" alt="" />
-          <img src="../../../Images/Mulher 6.png" alt="" />
+          <img src={Woman1} alt="" />
+          <img src={Woman2} alt="" />
+          <img src={Woman3} alt="" />
+          <img src={Woman4} alt="" />
+          <img src={Woman5} alt="" />
+          <img src={Woman6} alt="" />
         </div>
       </div>
 
@@ -72,21 +83,21 @@ const Start = () => {
         <li className='two-row'>
           <h2>Jeans</h2>
           <p>Style and comfort meet in our collection of jeans. Discover the latest trends and perfect cuts for an impeccable look.</p>
-          <img className={styles.Jeans} src="../../../Images/Jeans.png" alt="" />
+          <img className={styles.Jeans} src={Sneakers} alt="" />
         </li>
 
         <li>
           <h2>Shirts</h2>
-          <img className={styles.Shirt} src="../../Images/Shirt.png" alt="" />
+          <img className={styles.Shirt} src={Shirt} alt="" />
         </li>
         </div>
 
 
         <li>
-        <img className={styles.Prom1} src="../../Images/Promotion.png" alt="" />
+        <img className={styles.Prom1} src={Promotion} alt="" />
           <h2>Promotions</h2>
           <p>Explore exclusive deals on our top products. The perfect opportunity to enrich your wardrobe with trendy pieces at affordable prices.</p>
-          <img className={styles.Prom2} src="../../Images/Promotion2.png" alt="" />
+          <img className={styles.Prom2} src={Promotion} alt="" />
         </li>
 
       <div>
@@ -94,7 +105,7 @@ const Start = () => {
 
         <li>
           <h2>T-Shirts</h2>
-          <img  className={styles.TShirt} src="../../Images/TShirt.png" alt="" />
+          <img  className={styles.TShirt} src={TShirt} alt="" />
         </li>
 
        
@@ -102,7 +113,7 @@ const Start = () => {
         <li className='two-row'>
           <h2>Sneakers</h2>
           <p>Passion for fashion and comfort is reflected in every pair of sneakers. Experience style and functionality in a single step.</p>
-          <img className={styles.Sneakers}  src="../../Images/Sneakers.png" alt="" />
+          <img className={styles.Sneakers}  src={Sneakers} alt="" />
         </li>
       </div>
       <div className={styles.Glow}>
