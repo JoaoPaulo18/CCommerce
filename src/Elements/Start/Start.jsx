@@ -5,6 +5,7 @@ import Subtitle from '../Helpers/Subtitle'
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/src/ScrollTrigger';
 import Produtos from '../Produtos/Produtos';
+
 const Start = () => {
   // gsap.registerPlugin(ScrollTrigger)
 
@@ -51,12 +52,12 @@ const Start = () => {
       <div id='Up' className={styles.Up}>
         <div id='Carrossel' className={styles.carrosselContainer}>
 
-          <img src="../../Images/Mulher 1.png" alt="" />
-          <img src="../../Images/Mulher 2.jpg" alt="" />
-          <img src="../../Images/Mulher 3.png" alt="" />
-          <img src="../../Images/Mulher 4.png" alt="" />
-          <img src="../../Images/Mulher 5.png" alt="" />
-          <img src="../../Images/Mulher 6.png" alt="" />
+          <img src="../../../Images/Mulher 1.png" alt="" />
+          <img src="../../../Images/Mulher 2.jpg" alt="" />
+          <img src="../../../Images/Mulher 3.png" alt="" />
+          <img src="../../../Images/Mulher 4.png" alt="" />
+          <img src="../../../Images/Mulher 5.png" alt="" />
+          <img src="../../../Images/Mulher 6.png" alt="" />
         </div>
       </div>
 
