@@ -80,15 +80,15 @@ app.get("/carrinho", async (req, res) => {
   }
 });
 
-// const options = {
-//   key: fs.readFileSync("/etc/letsencrypt/live/seu-dominio.com/privkey.pem"),
-//   cert: fs.readFileSync("/etc/letsencrypt/live/seu-dominio.com/fullchain.pem"),
-// };
-
 const options = {
-  key: fs.readFileSync("./key.pem"),
-  cert: fs.readFileSync("./cert.pem"),
+  key: fs.readFileSync(
+    "/etc/letsencrypt/live/cyberneticsonline.zapto.org/privkey.pem"
+  ),
+  cert: fs.readFileSync(
+    "/etc/letsencrypt/live/cyberneticsonline.zapto.org/fullchain.pem"
+  ),
 };
+
 https.createServer(options, app).listen(PORT, () => {
   console.log(`Servidor HTTPS rodando na porta ${PORT}`);
 });

@@ -10,8 +10,7 @@ const Produtos = ({link}) => {
   const ProdutoRef = React.useRef(null)
   const [scroll, setScroll] = React.useState(0)
 
-  const url = 'https://154.38.164.159:3000/'
-  // const url = 'https://localhost:3000/'
+  const url = 'https://cyberneticsonline.zapto.org:3000/'
 
 
  const Plus =  React.useCallback(()=>{
