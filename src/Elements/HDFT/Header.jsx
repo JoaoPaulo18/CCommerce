@@ -63,20 +63,20 @@ gsap.registerPlugin(ScrollTrigger)
 
 // Selecionando o elemento que queremos animar
 setTimeout(()=>{
- 
   gsap.to("#header", {
     scrollTrigger: {
       trigger: "#BODY",   // O elemento que irá disparar o efeito
       start: "28%",  
-      end:"100%",            // Quando a parte superior do elemento atingir 80% da tela
+ 
+      markers:true,           // Quando a parte superior do elemento atingir 80% da tela
      // Quando a parte superior do elemento atingir 30% da tela
       scrub: false,    
-      toggleActions: "play none none none",  
+      toggleActions: "play none none reverse",  
                    // Faz com que a animação seja sincronizada com o scroll
                    // Exibe marcadores para ajudar a visualizar a posição de scroll (opcional)
     },
-    background: "var(--Background)",
     boxShadow:"0px .2px 0px 0px #D0D0D0",
+    background: "var(--Background)",
     duration:.1                  // Cor que o texto vai mudar
   });
       
