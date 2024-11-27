@@ -16,6 +16,7 @@ import Shirt from '../../../Images/Shirt.png'
 import Promotion from '../../../Images/Promotion.png'
 import TShirt from '../../../Images/TShirt.png'
 import Sneakers from '../../../Images/Sneakers.png'
+import Video from '../../../Images/VideoHero.mp4'
 
 const Start = () => {
   // gsap.registerPlugin(ScrollTrigger)
@@ -48,7 +49,7 @@ const Start = () => {
   return (
     <section id='StartHeader'  className={styles.start}> 
         <section className={styles.Video}>
-          <video src="../../Images/VideoHero.mp4" loop preload='auto' playsInline autoPlay muted></video>
+          <video src={Video} loop preload='auto' playsInline autoPlay muted></video>
         </section>
 
     <section id='Comeca' className={styles.Others}>
