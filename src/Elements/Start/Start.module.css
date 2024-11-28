@@ -42,6 +42,8 @@ top: 0;
     overflow-x:visible;
     position: relative;
     transform: translate(-80px);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .carrosselContainer img{
@@ -164,6 +166,9 @@ top: 0;
     }
     .gameContainer .Jeans{
         bottom: -30%;
+    }
+    .carrosselContainer img{
+        max-width: 270px;
     }
 }
 @media (max-width:800px) {
