@@ -65,10 +65,8 @@ gsap.registerPlugin(ScrollTrigger)
 setTimeout(()=>{
   gsap.to("#header", {
     scrollTrigger: {
-      trigger: "#BODY",   // O elemento que irá disparar o efeito
-      start: "28%",  
- 
-      markers:true,           // Quando a parte superior do elemento atingir 80% da tela
+      trigger: "#Comeca",   // O elemento que irá disparar o efeito
+      start: ".5%",            // Quando a parte superior do elemento atingir 80% da tela
      // Quando a parte superior do elemento atingir 30% da tela
       scrub: false,    
       toggleActions: "play none none reverse",  
