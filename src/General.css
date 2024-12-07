@@ -55,6 +55,8 @@ a,ul,li{
     list-style: none;
 }
 
+
+
 html,body{
     overflow-x: hidden;
 
@@ -63,4 +65,5 @@ body{
     min-height: 100svh;
     background: var(--Background);
     font-family: "Sora", sans-serif;
+
 }

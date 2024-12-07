@@ -3,9 +3,10 @@
     color: var(--Reverse);
     text-align: center;
     text-transform: uppercase;
+    padding: 0 1rem;
 }
 
-@media (max-width:380px) {
+@media (max-width:480px) {
     .title{
         font-size: 2rem;
     }

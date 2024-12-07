@@ -138,7 +138,7 @@ const Start = () => {
       <div className={styles.Produtos}>
       <Title>TRENDING NOW</Title>
       <Produtos link='produtos?per_page=10'/>
-      <Produtos link='produtos?per_page=10'/>
+      <Produtos link='produtos?per_page=9'/>
       </div>
     </section>
 
