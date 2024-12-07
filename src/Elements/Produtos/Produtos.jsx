@@ -23,7 +23,7 @@ const Produtos = ({link}) => {
 //Para fazer a contagem, pegar o total de produtos e diminuir no Tamanho Section
 React.useEffect(()=>{
   if(Wrapper.current)
-  setTamanho(+(Wrapper.current.getBoundingClientRect().width / (250+21)).toFixed(2))
+  setTamanho(+(Wrapper.current.getBoundingClientRect().width / (250+19.2)).toFixed(2))
 if(ProdutoRef.current)
 {
   if(Math.floor(ProdutoRef.current.getBoundingClientRect().left) > 0) setDebug(Math.floor(ProdutoRef.current.getBoundingClientRect().left))
@@ -39,24 +39,24 @@ if(ProdutoRef.current)
 const Less = React.useCallback(()=>{
   if(end){
     setStart(true)
-    if(Math.floor(ProdutoRef.current.getBoundingClientRect().left) > 0) setDebug(Math.floor(ProdutoRef.current.getBoundingClientRect().left))
+ 
     if(TamanhoSection<Math.floor(TamanhoSection)+0.1){
       
       if(debug > 0){
         console.log(debug)
-        ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + 250 - debug + 21 }px`
+        ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + 250 - debug + 19.2 }px`
       }
       else
-        ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + 250 + 21 }px`
+        ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + 250 + 19.2 }px`
     }
 
     else if(TamanhoSection<Math.floor(TamanhoSection)+0.6){
       console.log('final')
   
       if(Math.floor(ProdutoRef.current.getBoundingClientRect().left) > 0)
-        ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) +21 + 81}px`
+        ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) +19.2 + 81}px`
       else 
-        ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) +21 }px`
+        ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) +19.2 }px`
 
       }
 
@@ -64,17 +64,17 @@ const Less = React.useCallback(()=>{
       console.log('final')
   
       if(Math.floor(ProdutoRef.current.getBoundingClientRect().left) > 0)
-    ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) + 250+21 + 81 }px`
+    ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) + 250+19.2 + 81 }px`
   
 
     else{
       console.log('final')
-    ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) + 250+21  }px`
+    ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) + 250+19.2  }px`
     }
     }
     setEnd(false);
     }else{
-      ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + 250 + 21 + debug   }px`
+      ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left + 250 + 19.2 + debug   }px`
     }
     setContagem(contagem+1)
   },[TamanhoSection,start,contagem,debug])
@@ -87,30 +87,30 @@ const Less = React.useCallback(()=>{
       if(TamanhoSection<Math.floor(TamanhoSection)+0.1){
      
         if(Math.floor(ProdutoRef.current.getBoundingClientRect().left) > 0)
-          ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - 250 - debug -21 }px`
+          ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - 250 - debug -19.2 }px`
         else
-          ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - 250 -21 }px`
+          ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - 250 -19.2 }px`
       }
 
       else if(TamanhoSection<Math.floor(TamanhoSection)+0.6){
         if(Math.floor(ProdutoRef.current.getBoundingClientRect().left) > 0)
-          ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) -21 - debug}px`
+          ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) -19.2 - debug}px`
         else 
-          ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) -21 }px`
+          ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) -19.2 }px`
 
         }
 
       else{
         if(Math.floor(ProdutoRef.current.getBoundingClientRect().left) > 0)
 
-      ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) - 250-21 -debug }px`
+      ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) - 250-19.2 -debug }px`
 
       else
-      ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) - 250-21  }px`
+      ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - Math.abs(250 * (Math.abs((TamanhoSection-Math.floor(TamanhoSection))) - 1) ) - 250-19.2  }px`
       }
       setStart(false);
       }else{
-        ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - 250-21-debug  }px`
+        ProdutoRef.current.style.left = `${ProdutoRef.current.getBoundingClientRect().left - 250-19.2-debug  }px`
      }
 setContagem(contagem-1)
 },[TamanhoSection,start,contagem,debug])
