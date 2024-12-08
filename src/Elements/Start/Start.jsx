@@ -17,6 +17,7 @@ import Promotion from '../../../Images/Promotion.png'
 import TShirt from '../../../Images/TShirt.png'
 import Sneakers from '../../../Images/Sneakers.png'
 import Video from '../../../Images/VideoHero.mp4'
+import Email from '../Email/Email';
 
 const Start = () => {
   // gsap.registerPlugin(ScrollTrigger)
@@ -139,6 +140,7 @@ const Start = () => {
       <Title>TRENDING NOW</Title>
       <Produtos link='produtos?per_page=10'/>
       <Produtos link='produtos?per_page=9'/>
+      <Email/>
       </div>
     </section>
 
